@@ -1,8 +1,12 @@
 
 server:
+  address: 0.0.0.0
   port: 8761
 
 eureka:
+  renewalPercentThreshold: 0.85
+  server:
+    wait-time-in-ms-when-sync-empty: 0
   client:
     register-with-eureka: false
     fetch-registry: false
